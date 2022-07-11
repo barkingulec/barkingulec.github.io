@@ -15,6 +15,14 @@ html, body {
     box-sizing: border-box;
 }
 
+p{
+    font-weight: 600;
+}
+
+.coral{
+    color: rgba(255, 127, 80, .8);
+}
+
 .nav{
     display: flex;
     background-color: peachpuff;
@@ -354,8 +362,7 @@ html, body {
 
 .contact-p{
     padding: 0 200px 30px;
-    color: rgba(255,255,255,.7);
-    font-weight: 800;
+    color: rgba(255,255,255,.9);
 }
 
 .footer{
@@ -475,6 +482,7 @@ html, body {
     margin: 0 0 1em;
     font-size: .9rem;
     list-style-type: none;
+    font-weight: 600;
 }
 
 .skills li:before {
