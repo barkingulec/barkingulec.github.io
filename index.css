@@ -383,7 +383,7 @@ p{
   }
 
   .about-sec{
-    margin-top: 300px;
+    margin-top: 550px;
   }
 
   .title {
@@ -400,6 +400,8 @@ p{
  }
 
  .works-sec{
+    padding: 6em 0;
+    margin-top: 300px;
     text-align: center;
  }
 
@@ -409,8 +411,9 @@ p{
  }
 
  .contact-sec{
+    padding: 5em 0;
     text-align: center;
-    margin: 400px 0 200px;
+    margin: 120px 0 150px;
  }
 
 .contact-h1{
@@ -440,7 +443,7 @@ p{
 
 
 .aboutme {
-    padding: 16em 0;
+    padding: 6em 0;
     width: 50%
 }
 
