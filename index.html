@@ -8,9 +8,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
             rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script defer src="animate.js"></script>
     </head>
     <body>
-        <div class="left-fixed">
+        <div class="left-fixed left-to-right-hidden">
             <ul class="social-links">
               <li><a href="https://github.com/barkingulec" target="_blank"><svg
                     aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img"
@@ -58,36 +59,96 @@
         </div>
         <div class="container">
             <div>
-                <h2 class="hi">Hi, my name is</h2>
-                <h1 class="name">Barkın Güleç.</h1>
-                <h1 class="desc">I build things for the web.</h1>
-                <a class="custom-btn btn-5" href="mailto:barkin.gulec@metu.edu.tr">Get In Touch</a>
+                <h2 class="hi left-to-right-hidden">Hi, my name is</h2>
+                <h1 class="name left-to-right-hidden">Barkın Güleç</h1>
+                <h1 class="desc left-to-right-hidden">Full Stack Web &amp; App Developer.</h1>
+                <div class="bottom-to-top-hidden">
+                    <a class="custom-btn btn-5" href="mailto:barkin.gulec@metu.edu.tr">Get In Touch</a>
+                </div>
             </div>
             <div class="about-sec" id="about">
                 <div class="flex-row">
                     <div class="aboutme">
-                        <h1 class="title"><span class="title-span">About me.</span></h1>
-                        <p>Hello! I'm Barkın, first year student at <span class="coral">Middle East Technical University.</span></p>
-                        <p>I am interested in software development. I watched a lot of online courses and am still trying to improve myself in web development and python. I am still learning</p>
-                        <ul class="skills">
-                            <li>JavaScript (ES6+)</li>
+                        <h1 class="title left-to-righ-hidden"><span class="title-span">About me.</span></h1>
+                        <p class="left-to-right-hidden">Hello! I'm <span class="coral">Barkın</span>, 2nd year student in Metallurgical and Materials Engineering at <span class="coral">Middle East Technical University.</span></p>
+                        <p class="left-to-right-hidden">I am interested in software development. I took a lot of online courses and am still trying to improve myself in data structures &amp; algorithms, full-stack web development and mobile app development. I am improving myself at</p>
+                        <ul class="skills bottom-to-top-hidden">
+                            <li>Flutter</li>
+                            <li>Django</li>
+                            <li>JavaScript</li>
                             <li>Python</li>
-                            <li>Vue (2 &amp; 3)</li>
-                            <li>React</li>
-                            <li>HTML &amp; (S)CSS</li>
+                            <li>HTML &amp; CSS</li>
                             <li>Web3 &amp; Smart Contracts</li>
                         </ul>    
                     </div>
-                    <div class="imageme">
-                        <div class="image overlay"></div>
+                    <div class="imageme right-to-left">
+                        <div class="image overlay right-to-left-hidden"></div>
                     </div>
                 </div>
             </div>
             <div class="works-sec" id="works">
                 <h1 class="title"><span class="title-span">Some Things I've Built.</span></h1>
-                <a class="custom-btn btn-5" href="https://github.com/barkingulec" target="_blank">See All</a>
+                <div class="projects">
+                    <div class="project-outer-div none left-to-right-hidden" id="single-project-after-2">
+                        <a class="web-project-title" href="https://github.com/barkingulec/e-commerce-django" target="_blank"><h2 class="web-project-title">UTOPIA3D</h2></a>
+                        <div class="scene">
+                            <div class="carousel" id="parent">
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                              <div class="carousel__cell"></div>
+                            </div>
+                          </div>
+                          <button class="custom-btn btn-5 web-hide-btn" id="hide-button-2">Hide Images</button>
+                          <div class="buttons">
+                            <svg class="svg-inline--fa fa-w-16 previous-button" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="right-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                            <p><span id="cur-index">1 </span> / 9</p>
+                            <svg class="svg-inline--fa fa-w-16 next-button" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="right-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                          </div>                 
+                    </div>
+                    <div class="single-project left-to-right-hidden" id="single-project-before-2">
+                        <a style="text-decoration: none;" href="https://github.com/barkingulec/e-commerce-django" target="_blank"><p class="single-project-title">UTOPIA3D</p></a>
+                        <p class="single-project-desc">UTOPIA3D is designed for the most convenient way of buying &amp; selling 3D printed models. This website also contains features which allows users to interact with each other, such as follow, comment and like system, discussion section and so on.</p>    
+                        <button class="show-button btn-5" id="show-button-2">Show Images</button>
+                    </div>
+                    <div class="app-project-outer-div none right-to-left-hidden" id="single-project-after">
+                        <a class="web-project-title" href="https://github.com/barkingulec/odtusocial" target="_blank"><h2 class="web-project-title">ODTUSocial</h2></a>
+                        <div class="scene2">
+                            <div class="carousel2" id="parent2">
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                              <div class="carousel__cell2"></div>
+                            </div>
+                          </div>
+                          <button class="custom-btn btn-5" id="hide-button">Hide Images</button>
+                          <div class="buttons2">
+                            <svg class="svg-inline--fa fa-w-16 previous-button2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="right-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                            <p><span id="cur-index2">1 </span> / 9</p>
+                            <svg class="svg-inline--fa fa-w-16 next-button2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="right-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                          </div>                 
+                    </div>
+                    <div class="single-project right-to-left-hidden" id="single-project-before">
+                        <a style="text-decoration: none;" href="https://github.com/barkingulec/e-commerce-django" target="_blank"><p class="single-project-title">ODTUSocial</p></a>
+                        <p class="single-project-desc">ODTUsocial is an app that makes it easier for students to find student clubs and communities and stay up to date with the community's activities.</p>
+                        <button class="show-button btn-5" id="show-button">Show Images</button>
+                    </div>
+                </div>
+                <div class="bottom-to-top-hidden">
+                    <a class="custom-btn btn-5" href="https://github.com/barkingulec" target="_blank">See All</a>
+                </div>
             </div>
-            <div class="contact-sec" id="contact">
+            <div class="contact-sec bottom-to-top-hidden" id="contact">
                 <h2 class="contact-title">What's Next?</h2>
                 <h1 class="contact-h1">Get In Touch</h1>
                 <p class="contact-p">My inbox is always open. Whether for a potential project, asking a question or just to say hi, feel free to write, I'll try my best to answer your email! </p>
